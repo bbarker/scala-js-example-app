@@ -17,3 +17,7 @@ libraryDependencies ++= Seq(
     "org.scala-js" %%% "scalajs-dom" % "0.8.1",
     "com.lihaoyi" %%% "utest" % "0.3.0" % "test"
 )
+
+// Enable for development, not release; may need to change directory
+lazy val scalajs_mapbox = RootProject(file("../scalajs-mapbox"))
+lazy val root = project.dependsOn(scalajs_mapbox)

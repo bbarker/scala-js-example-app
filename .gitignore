@@ -3,3 +3,16 @@ target/
 .classpath
 .project
 .settings/
+
+
+# Intellij generated files #
+############################
+*.iml
+*.ipr
+*.iws
+.idea/
+
+
+# Other temp files #
+####################
+*~
