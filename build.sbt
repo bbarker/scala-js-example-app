@@ -20,4 +20,4 @@ libraryDependencies ++= Seq(
 
 // Enable for development, not release; may need to change directory
 lazy val scalajs_mapbox = RootProject(file("../scalajs-mapbox"))
-lazy val root = project.dependsOn(scalajs_mapbox)
+val root = Project(id = "Example", base = file(".")).dependsOn(scalajs_mapbox)
